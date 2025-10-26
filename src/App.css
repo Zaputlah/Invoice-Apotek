@@ -1,0 +1,189 @@
+/* Reset dan box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Container utama */
+.app-container {
+  display: flex;
+  height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #1a73e8;
+  color: white;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 0.8rem 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.sidebar ul li:hover {
+  background-color: #1558b0;
+}
+
+/* Main content */
+.main-content {
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 1.5rem;
+  overflow-y: auto;
+  background-color: #f0f4f8;
+}
+
+/* Card */
+.card {
+  background: linear-gradient(145deg, #ffffff, #e6f0ff);
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #1a73e8;
+  color: white;
+}
+
+/* Input dan button */
+input[type="text"],
+input[type="number"],
+select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 10px;
+  font-size: 0.95rem;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1a73e8;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #1558b0;
+  transform: translateY(-2px);
+}
+
+/* Container input grup */
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Tombol export (jika ada) */
+.buttons-export {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-excel {
+  background-color: #27ae60;
+}
+
+.btn-excel:hover {
+  background-color: #1e8449;
+}
+
+.btn-word {
+  background-color: #2980b9;
+}
+
+.btn-word:hover {
+  background-color: #1c5980;
+}
+
+/* Info tambahan */
+.data-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.data-container h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.data-container .input-group input,
+.data-container .input-group select {
+  margin-bottom: 0;
+}
+
+/* Responsive minor */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .sidebar ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+}

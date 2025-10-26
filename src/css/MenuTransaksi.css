@@ -1,0 +1,149 @@
+/* Container Card */
+.data-container {
+  background: linear-gradient(145deg, #ffffff, #fef8f0);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  max-width: 900px;
+  margin: 30px auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.data-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.data-container h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ff9800;
+  margin-bottom: 2rem;
+}
+
+/* Grid info pasien & invoice */
+.grid-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.grid-info input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.grid-info input:focus {
+  outline: none;
+  border-color: #ff9800;
+  box-shadow: 0 0 8px rgba(255,152,0,0.25);
+}
+
+/* Add Item */
+.add-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.input-select,
+.input-number {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.input-select:focus,
+.input-number:focus {
+  outline: none;
+  border-color: #ff9800;
+  box-shadow: 0 0 8px rgba(255,152,0,0.25);
+}
+
+.btn-add {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffb74d, #ff9800);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255,152,0,0.25);
+  transition: all 0.3s ease;
+}
+
+.btn-add:hover {
+  background: linear-gradient(145deg, #ff9800, #e68900);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255,152,0,0.35);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+table th {
+  background-color: #fff3e0;
+  font-weight: 600;
+}
+
+table tr:nth-child(even) {
+  background-color: #fff8f0;
+}
+
+table tr:hover {
+  background-color: #ffe8c7;
+  transition: background 0.3s;
+}
+
+/* Total */
+.total {
+  text-align: right;
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Simpan & Transaksi Baru Button */
+.btn-save {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffb74d, #ff9800);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255,152,0,0.25);
+  transition: all 0.3s ease;
+}
+
+.btn-save:hover:enabled {
+  background: linear-gradient(145deg, #ff9800, #e68900);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255,152,0,0.35);
+}
+
+.btn-save:disabled {
+  background: #ffcc80;
+  cursor: not-allowed;
+  box-shadow: none;
+}

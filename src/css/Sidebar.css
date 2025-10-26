@@ -1,0 +1,39 @@
+.sidebar {
+  width: 220px;
+  background-color: #1a73e8;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 0.8rem 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.sidebar ul li.active {
+  background-color: #1558b0;
+  font-weight: 600;
+  color: #fff;
+  border-left: 5px solid #ffeb3b; /* border kiri kuning supaya terlihat jelas */
+}
+
+
+.sidebar ul li:hover {
+  background-color: #1558b0;
+}
