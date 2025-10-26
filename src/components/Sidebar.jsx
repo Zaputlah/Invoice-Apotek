@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/sidebar.css";
+import "../css/Sidebar.css";
 
 const Sidebar = ({ currentMenu, setCurrentMenu }) => {
   return (
